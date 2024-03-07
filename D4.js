@@ -4,11 +4,10 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const area = function (l1, l2) {
-    console.log(l1*l2)
+  console.log(l1 * l2)
 }
 
-area (2,8)
-
+area(2, 8)
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -17,8 +16,14 @@ area (2,8)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const crazySum = function (n1, n2)
+const crazySum = function (n1, n2) {
+  return n1 + n2
+  if (n1 === n2) {
+    return (n1 + n2) * 3
+  }
+}
 
+console.log(crazySum)
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -26,6 +31,11 @@ const crazySum = function (n1, n2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (givenNumber) {
+  console.log(givenNumber - 9)
+}
+
+crazyDiff()
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -33,6 +43,13 @@ const crazySum = function (n1, n2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if ((n > 20 && n <= 100) || n === 400) {
+    return true
+  }
+}
+
+boundary(3)
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -41,6 +58,7 @@ const crazySum = function (n1, n2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function ("string")
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -48,6 +66,7 @@ const crazySum = function (n1, n2)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function (integer)
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
